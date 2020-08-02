@@ -9,6 +9,7 @@ def home():
     scan=open("sentences.txt")
     list=scan.readlines()
     text=random.choice(list)
+    print("hello")
     return render_template('home.html',sentence=text)
 
 @app.route('/hello')
