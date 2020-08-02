@@ -1,0 +1,25 @@
+body {
+    background-color:lightgrey;
+}
+h1 {
+    font-size: 40px;
+    font-family: "Calibri";
+    text-align: center;
+}
+
+.textbox {
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 200px;
+    width: 1000px;
+}
+
+p {
+    font-family: "Calibri";
+    color: blue;
+    font-size: 30px;
+    text-align: left;
+}
