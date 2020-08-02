@@ -14,4 +14,5 @@ function changeHighlight(sentence) {
     section.appendChild(text);
     index++;
     //fqfwer
+    //neel is gay
 }
