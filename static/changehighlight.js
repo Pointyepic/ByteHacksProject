@@ -13,4 +13,5 @@ function changeHighlight(sentence) {
     text.appendChild(document.createTextNode(sentence.substring(index+1)));
     section.appendChild(text);
     index++;
+    //fqfwer
 }
