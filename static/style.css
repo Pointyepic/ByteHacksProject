@@ -24,3 +24,15 @@ p {
     text-align: left;
 }
 
+.buttonborder {
+    text-align: center;
+    padding: 30px;
+}
+
+#button {
+    height: 50px;
+    width: 100px;
+    font-family: "Arial";
+    font-size: 20px;
+    border-radius: 5px;
+}

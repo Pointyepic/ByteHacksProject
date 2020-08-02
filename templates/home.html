@@ -8,6 +8,8 @@
     <h1> Practice Morse Codes</h1>
     <div class="textbox" id="textbox">  
     </div>
-    <button type="button" onclick="changeHighlight('{{sentence}}')"> click </button>
+    <div class="buttonborder"> 
+        <button id="button" type="button" onclick="changeHighlight('{{sentence}}')"> click </button>
+    </div>
     <script src="{{ url_for('static', filename='changehighlight.js') }}"></script>
 </body>
