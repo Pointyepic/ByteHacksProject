@@ -7,13 +7,9 @@ app = Flask(__name__)
 @app.route('/home')
 def home():
     scan=open("sentences.txt")
-    list=scan.readlines()
+    list=scan.read().splitlines()
     text=random.choice(list)
-    return render_template('home.html',sentence=text)
-
-@app.route('/hello')
-def hello_world():
-    return 'Hello, World'
+    return render_template('home.html', sentence=text)
 
 if __name__=='__main__':
     app.run(debug=True)

@@ -4,9 +4,10 @@
     <title> MorseTyper</title> 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body onload="changeHighlight('{{sentence}}');">
     <h1> Practice Morse Codes</h1>
-    <div class="textbox">  
-        <p> {{ sentence }}</p>    
+    <div class="textbox" id="textbox">  
     </div>
+    <button type="button" onclick="changeHighlight('{{sentence}}')"> click </button>
+    <script src="{{ url_for('static', filename='changehighlight.js') }}"></script>
 </body>

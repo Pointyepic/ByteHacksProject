@@ -3,7 +3,7 @@ body {
 }
 h1 {
     font-size: 40px;
-    font-family: "Calibri";
+    font-family: "Arial";
     text-align: center;
 }
 
@@ -18,8 +18,9 @@ h1 {
 }
 
 p {
-    font-family: "Calibri";
+    font-family: "Arial";
     color: blue;
     font-size: 30px;
     text-align: left;
 }
+
