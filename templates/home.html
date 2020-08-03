@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> MorseTyper</title> 
+    <title> MorseTyper</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body onload="changeHighlight('{{sentence}}');">
     <h1> Practice Morse Codes</h1>
-    <div class="textbox" id="textbox">  
+    <div class="textbox" id="textbox">
     </div>
-    <div class="buttonborder"> 
+    <div class="buttonborder">
         <button id="button" type="button" onclick="changeHighlight('{{sentence}}')"> click </button>
     </div>
     <script src="{{ url_for('static', filename='changehighlight.js') }}"></script>
+
+
 </body>
+<a href= "about.html">click here</a>
