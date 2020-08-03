@@ -94,13 +94,20 @@ function changeHighlight(att) {
     for(var i = 0; i < children.length; i++) {
         section.removeChild(children[i]);
     }
-    var text=document.createElement('p');
-    text.appendChild(document.createTextNode(sentence.substring(0,index)));
-    var letter=document.createElement('span');
-    letter.setAttribute('id', att);
-    letter.appendChild(document.createTextNode(sentence.substring(index,index+1)));
-    text.appendChild(letter);
-    text.appendChild(document.createTextNode(sentence.substring(index+1)));
-    section.appendChild(text);
-    //index++;
+    if (index<sentence.length) {
+        var text=document.createElement('p');
+        text.appendChild(document.createTextNode(sentence.substring(0,index)));
+        var letter=document.createElement('span');
+        letter.setAttribute('id', att);
+        letter.appendChild(document.createTextNode(sentence.substring(index,index+1)));
+        text.appendChild(letter);
+        text.appendChild(document.createTextNode(sentence.substring(index+1)));
+        section.appendChild(text);
+        //index++
+    }
+    else {
+        var text=document.createElement('p');
+        text.appendChild(document.createTextNode("Great Job! You finished the sentence."));
+        section.appendChild(text);
+    }
 }
