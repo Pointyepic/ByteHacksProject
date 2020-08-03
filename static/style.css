@@ -29,8 +29,8 @@ h1 {
     width: 200px;
     background-color: white;
 }
-p {
-    font-family: "Courier";
+#paragraph {
+    font-family: "Arial";
     font-size: 30px;
     text-align: left;
 }

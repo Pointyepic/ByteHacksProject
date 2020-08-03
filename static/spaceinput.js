@@ -94,8 +94,9 @@ function changeHighlight(att) {
     for(var i = 0; i < children.length; i++) {
         section.removeChild(children[i]);
     }
+    var text=document.createElement('p');
+    text.setAttribute('id','paragraph');
     if (index<sentence.length) {
-        var text=document.createElement('p');
         text.appendChild(document.createTextNode(sentence.substring(0,index)));
         var letter=document.createElement('span');
         letter.setAttribute('id', att);
@@ -106,8 +107,12 @@ function changeHighlight(att) {
         //index++
     }
     else {
-        var text=document.createElement('p');
         text.appendChild(document.createTextNode("Great Job! You finished the sentence."));
         section.appendChild(text);
+        var homelink=document.createElement('a');
+        homelink.setAttribute('href',"home");
+        homelink.setAttribute('id',"paragraph");
+        homelink.appendChild(document.createTextNode("Try again"));
+        section.appendChild(homelink);
     }
 }
