@@ -1,5 +1,6 @@
 body {
     background-color:lightgrey;
+    margin: 0;
 }
 h1 {
     font-size: 40px;
@@ -15,11 +16,21 @@ h1 {
     padding-right: 30px;
     height: 200px;
     width: 1000px;
+    background-color: white;
 }
 
+.inputbox {
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 0px 30px;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
 p {
     font-family: "Arial";
-    color: blue;
     font-size: 30px;
     text-align: left;
 }
@@ -31,8 +42,52 @@ p {
 
 #button {
     height: 50px;
-    width: 100px;
+    width: 200px;
     font-family: "Arial";
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
+}
+
+.spacedown {
+    background-color: lightgreen;
+}
+
+.spaceup {
+    background-color: white;
+}
+.topnav {
+    background-color: green;
+    font-size: 20px;
+    font-family: "Arial";
+    padding: 15px 0px;
+    overflow: hidden;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+#correct {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+#wrong {
+    background-color: lightpink;
+    font-weight: bold;
+}
+
+#input {
+    font-family: "Courier";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
 }
