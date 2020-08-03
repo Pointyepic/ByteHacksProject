@@ -4,18 +4,32 @@
     <title> MorseTyper</title> 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body onload="changeHighlight('correct');">
+<body onload="changeHighlight('correct'); updateStopWatch();">
     <div class="topnav">
         <a href="home">Home</a>
         <a href="about">About</a>
       </div>
-    <h1> Practice Morse Code</h1>
-    <div class="textbox" id="textbox">  
+    <h1> MorseTyper</h1>
+    <h2> Practice sending morse code</h2>
+    <div class="textbox" id="textbox"> </div>
+    
+    <div class="midpart">
+        <div class="stopwatch" id="stopwatch"> </div>
+        <div class='inputarea'>
+            <div class="inputbox" id="inputbox"></div>
+            <div class="buttonborder"> 
+                <button class='spaceup' id="button" type="button"> Press Space to input! </button>
+            </div>
+        </div>
+        <div class="morsechart" id="morsechart">
+            <input type="checkbox" id="checkbox" onclick="showChart();">Show morse code chart</input>
+            <img src="{{ url_for('static', filename='morsechart.png') }}" id='image' class='hidden'> </img>
+        </div>
     </div>
-    <div class="inputbox" id="inputbox"></div>
-    <div class="buttonborder"> 
-        <button class='spaceup' id="button" type="button"> Press Space to input! </button>
-    </div>
+    <audio id="audio" controls loop style="display:none">
+        <source src="{{ url_for('static', filename='morsecodesound.mp3') }}" type="audio/mpeg">
+    </audio>
     <script src="{{ url_for('static', filename='spaceinput.js') }}"></script>
     <script> initSentence('{{sentence}}'); </script>
 </body>
+</html>
