@@ -105,7 +105,7 @@ function updateStopWatch() {
     }
     var timertext=document.createElement('p');
     timertext.setAttribute('id','timer');
-    timertext.appendChild(document.createTextNode('Time: '+stoptime));
+    timertext.appendChild(document.createTextNode('Time: '+stoptime+ " seconds"));
     timerbox.appendChild(timertext);
 }
 function updateInputBox() {

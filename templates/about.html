@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WEB</title>
+    <title>About MorseTyper</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
 
@@ -12,21 +12,29 @@
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('about') }}">About</a>
       </div>
-      <h2>About</h2>
+      <h1 id="abouttitle">About MorseTyper</h1>
 
-    <p>
-    <b>Info:</b> Morse code is a method of telecommunication in which text characters are expressed through the combination of 2 different signals: "dots" and "dashes". The duration of
+    <p id="description">
+    <b>What is Morse Code?</b> Morse code is a method of telecommunication in which text characters are expressed through the combination of 2 different signals: "dots" and "dashes". The duration of
     a dot is 1 unit, while the duration of a dash is 3 units. The space betwen parts of the same letter is one unit; the space between different letters is 3 units; the space between different
     words is 7 units.
   </p>
-    <p>
-      <b>History:</b> The morse code system is named after Samuel Morse, who invented the telegraph during the 1930s. In a time when technology was not advanced enough to transmit human voices,
+    <p id="description">
+      <b>History of Morse Code:</b> The morse code system is named after Samuel Morse, who invented the telegraph during the 1930s. In a time when technology was not advanced enough to transmit human voices,
       the telegraph allowed for long-distance communication through the use of morse code. Morse code was crucial during times like WWII, the Korean and Vietnam Wars, and more. Morse code required
-      operators who could quickly express and decipher phrases in morse codee, which required an immense amount of practice.
+      operators who could quickly express and decipher phrases in morse code, which required an immense amount of practice.
     </p>
-    <p>
-    <b>Game:</b> This game is intended to teach the user to communicate morse code in a controlled environment, where they can track their speed and proficiency. When the game begins, a phrase will appear on the screen, which the player must express using morse code. Press spacebar to input the morse code. The current letter will be highlighted
-    in the sentence, and the time will be kept track of in the bottom left of the screen. The player can choose to see the morse code chart by clicking the checkbox.
-</p>
+    <p id="description">
+    <b>How to use:</b> MorseTyper is intended to teach the user to communicate morse code in a controlled environment, where they can track their speed and proficiency.
+    </p>
+    <ul id="description"> 
+      <li> When the game begins, a sentence will appear on the screen, which the player must express using morse code.</li>
+      <li> Press spacebar to input the morse code. The current letter will be highlighted in the sentence.</li>
+      <li> The time will be kept track of in the bottom left of the screen.</li>
+      <li>The player can choose to see the morse code chart by clicking the checkbox.</li> 
+    </ul>
+    <p id="description">
+      <b>Created by:</b> Ansley Tsai and Neel Suresh
+    </p>
   </body>
 </html>
